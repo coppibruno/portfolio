@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>b.coppi</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+    <link rel="stylesheet" href="./assets/scss/main.scss" />
+    <script
+      src="https://kit.fontawesome.com/6f21770ace.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="row">
+        <div class="logo col-xxl-2 col-md-2 col-sm-2 col-2">
+          <a class="pointer" href="#index"
+            ><img src="./assets/img/logo.png" alt="logo" height="50"
+          /></a>
+        </div>
+        <div class="col-xxl-10 col-md-10 col-sm-12 col-12">
+          <ul
+            class="menu-center d-flex justify-content-center itens nav nav-pills mb-3"
+            id="pills-tab"
+            role="tablist"
+          >
+            <li class="topbarMenus nav-item" role="presentation">
+              <a href="#index">INÍCIO</a>
+            </li>
+            <li class="topbarMenus nav-item" role="presentation">
+              <a href="#skills">HABILIDADES</a>
+            </li>
+            <li class="topbarMenus nav-item" role="presentation">
+              <a href="#contact">CONTATO</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div id="index" class="index">
+      <div class="img-div">
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/bruno-coppi-022583177/"
+          ><img src="./assets/img/profile.jpg" alt="foto"
+        /></a>
+      </div>
+      <p class="profileIntro">
+        <i class="mr-2 fa-solid fa-arrow-right-long"></i>Bruno Coppi
+      </p>
+      <p class="profileIntro">
+        <i class="mr-2 fa-solid fa-location-dot"></i>Blumenau SC
+      </p>
+      <p class="profileIntro">
+        <i class="mr-2 fa-solid fa-laptop-code"></i>Software Developer
+      </p>
+    </div>
+
+    <div class="background-scope">
+      <div class="container">
+        <div id="skills" class="skills">
+          <h3 class="text-center">
+            Conheça as ferramentas que utilizo para desenvolver
+          </h3>
+          <div
+            id="carouselExampleControls"
+            class="carousel slide web-version"
+            data-ride="carousel"
+            style="z-index: 5"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="skill-carrousel">
+                  <span class="itemSkill">
+                    <img
+                      width="80"
+                      height="80"
+                      src="assets/img/javascript.png"
+                      alt="skill"
+                    />
+                    <span class="title"><strong>Javascript</strong></span>
+                    <span>95%</span>
+                  </span>
+                  <span class="itemSkill">
+                    <img
+                      width="80"
+                      height="80"
+                      src="assets/img/nodejs.png"
+                      alt="skill"
+                    />
+                    <span class="title"><strong>NodeJS</strong></span>
+                    <span>90%</span>
+                  </span>
+                  <span class="itemSkill">
+                    <img
+                      width="80"
+                      height="80"
+                      src="assets/img/mongodb.png"
+                      alt="skill"
+                    />
+                    <span class="title"><strong>NoSQL e SQL</strong></span>
+                    <span>70%</span>
+                  </span>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="skill-carrousel">
+                  <span class="itemSkill">
+                    <img
+                      width="80"
+                      height="80"
+                      src="assets/img/react.png"
+                      alt="skill"
+                    />
+                    <span class="title"><strong>ReactJS</strong></span>
+                    <span>60%</span>
+                  </span>
+                  <span class="itemSkill">
+                    <img
+                      width="80"
+                      height="80"
+                      src="assets/img/vue.png"
+                      alt="skill"
+                    />
+                    <span class="title"><strong>VueJS</strong></span>
+                    <span>60%</span>
+                  </span>
+                  <span class="itemSkill">
+                    <img
+                      width="80"
+                      height="80"
+                      src="assets/img/php.png"
+                      alt="skill"
+                    />
+                    <span class="title"><strong>PHP</strong></span>
+                    <span>50%</span>
+                  </span>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="skill-carrousel">
+                  <span class="itemSkill">
+                    <img
+                      width="80"
+                      height="80"
+                      src="assets/img/html.png"
+                      alt="skill"
+                    />
+                    <span class="title"><strong>HTML5</strong></span>
+                    <span>95%</span>
+                  </span>
+                  <span class="itemSkill">
+                    <img
+                      width="80"
+                      height="80"
+                      src="assets/img/css.png"
+                      alt="skill"
+                    />
+                    <span class="title"><strong>CSS3</strong></span>
+                    <span>85%</span>
+                  </span>
+                  <span class="itemSkill">
+                    <img
+                      width="80"
+                      height="80"
+                      src="assets/img/docker.png"
+                      alt="skill"
+                    />
+                    <span class="title"><strong>Docker</strong></span>
+                    <span>70%</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div
+            id="carouselExampleControlsMobile"
+            class="carousel slide mobile-version"
+            data-ride="carousel"
+            style="z-index: 5"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="skill-carrousel">
+                  <span class="itemSkill">
+                    <img
+                      width="80"
+                      height="80"
+                      src="assets/img/javascript.png"
+                      alt="skill"
+                    />
+                    <span class="title"><strong>Javascript</strong></span>
+                    <span>95%</span>
+                  </span>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="skill-carrousel">
+                  <span class="itemSkill">
+                    <img
+                      width="80"
+                      height="80"
+                      src="assets/img/nodejs.png"
+                      alt="skill"
+                    />
+                    <span class="title"><strong>NodeJS</strong></span>
+                    <span>90%</span>
+                  </span>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="skill-carrousel">
+                  <span class="itemSkill">
+                    <img
+                      width="80"
+                      height="80"
+                      src="assets/img/mongodb.png"
+                      alt="skill"
+                    />
+                    <span class="title"><strong>NoSQL e SQL</strong></span>
+                    <span>70%</span>
+                  </span>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="skill-carrousel">
+                  <span class="itemSkill">
+                    <img
+                      width="80"
+                      height="80"
+                      src="assets/img/react.png"
+                      alt="skill"
+                    />
+                    <span class="title"><strong>ReactJS</strong></span>
+                    <span>60%</span>
+                  </span>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="skill-carrousel">
+                  <span class="itemSkill">
+                    <img
+                      width="80"
+                      height="80"
+                      src="assets/img/vue.png"
+                      alt="skill"
+                    />
+                    <span class="title"><strong>VueJS</strong></span>
+                    <span>60%</span>
+                  </span>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="skill-carrousel">
+                  <span class="itemSkill">
+                    <img
+                      width="80"
+                      height="80"
+                      src="assets/img/php.png"
+                      alt="skill"
+                    />
+                    <span class="title"><strong>PHP</strong></span>
+                    <span>50%</span>
+                  </span>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="skill-carrousel">
+                  <span class="itemSkill">
+                    <img
+                      width="80"
+                      height="80"
+                      src="assets/img/html.png"
+                      alt="skill"
+                    />
+                    <span class="title"><strong>HTML5</strong></span>
+                    <span>95%</span>
+                  </span>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="skill-carrousel">
+                  <span class="itemSkill">
+                    <img
+                      width="80"
+                      height="80"
+                      src="assets/img/css.png"
+                      alt="skill"
+                    />
+                    <span class="title"><strong>CSS3</strong></span>
+                    <span>85%</span>
+                  </span>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="skill-carrousel">
+                  <span class="itemSkill">
+                    <img
+                      width="80"
+                      height="80"
+                      src="assets/img/docker.png"
+                      alt="skill"
+                    />
+                    <span class="title"><strong>Docker</strong></span>
+                    <span>70%</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControlsMobile"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControlsMobile"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <div id="contact" class="footer">
+          <h3 class="text-center">Entre em contato comigo.</h3>
+          <div class="footer-icons">
+            <span class="contact-icon">
+              <a
+                target="_blank"
+                href="https://api.whatsapp.com/send?phone=5547996913897&text=Ol%C3%A1%20entrei%20em%20contato%20pelo%20seu%20site"
+              >
+                <i class="fa fa-whatsapp"></i>
+              </a>
+            </span>
+            <span class="contact-icon">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/bruno-coppi-022583177/"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </span>
+            <span class="contact-icon">
+              <a
+                href="https://github.com/coppibruno?tab=repositories"
+                target="_blank"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </span>
+          </div>
+          <span class="devby">
+            <p>Desenvolvido por</p>
+            <img src="./assets/img/logo.png" alt="logo" height="50" />
+          </span>
+        </div>
+      </div>
+    </div>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <a
+      href="https://api.whatsapp.com/send?phone=5547996913897&text=Ol%C3%A1%20entrei%20em%20contato%20pelo%20seu%20site"
+      style="
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: 40px;
+        background-color: #25d366;
+        color: #fff;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 1px 1px 2px #888;
+        z-index: 1000;
+      "
+      target="_blank"
+    >
+      <i style="margin-top: 16px" class="fa fa-whatsapp"></i>
+    </a>
+  </body>
+
+  <script type="module" src="./assets/js/main.js"></script>
+</html>

@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;700&family=Roboto:wght@300;400&display=swap');
+
+@import '~bootstrap/scss/bootstrap';
+$principal_color: #55afe3;
+$second_color: #f7f7f7;
+
+//for responsible
+@media only screen and (max-width: 877px) {
+  .logo {
+    display: none !important;
+  }
+
+  .menu-center {
+    font-size: 12px !important;
+    display: flex !important;
+    justify-content: space-between !important;
+
+    li {
+      margin-left: 10px !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  //todo tratar carrousel para uma skill por vez
+  .web-version {
+    display: none !important;
+  }
+
+  .mobile-version {
+    display: block !important;
+
+    .itemSkill:nth-last-child(-n + 2) {
+      margin: 0 !important;
+    }
+  }
+}
+
+.mr-2 {
+  margin-right: 10px;
+}
+* {
+  color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #ffffff !important;
+}
+
+header {
+  z-index: 10;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 65px;
+  backdrop-filter: blur(5px);
+  .row {
+    max-width: 70%;
+    margin: auto;
+  }
+  ul {
+    height: 100%;
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+    li > a:hover {
+      color: $principal_color !important;
+    }
+    li[class~='topbarMenus'] {
+      margin-left: 40px;
+    }
+    li > a:after,
+    li > a:before {
+      display: block;
+      content: '';
+      border-bottom: solid 3px $principal_color;
+      transform: scaleX(0);
+      transition: transform 250ms ease-in-out;
+    }
+    li > a:before {
+      position: absolute;
+      bottom: 1.2em;
+      left: 0;
+    }
+    .ef2:hover:after {
+      transition-delay: 150ms;
+    }
+
+    li > a:hover:after,
+    li > a:hover:before {
+      transform: scaleX(1);
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: $dark;
+  }
+}
+
+.icon {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.img-div > a > img {
+  margin-bottom: 30px;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 3px solid $principal_color;
+}
+
+.index {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../img/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.background-scope {
+  background: #000;
+  height: 100%;
+  .container {
+    width: 70%;
+    margin: auto;
+    text-align: justify;
+  }
+}
+
+.skills {
+  height: 800px;
+  padding-top: 130px;
+}
+
+.skill-carrousel {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .itemSkill:nth-last-child(-n + 2) {
+    margin-left: 100px;
+  }
+  .title {
+    margin-top: 10px;
+  }
+}
+
+.itemSkill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer {
+  .footer-icons {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 50px;
+    span:nth-last-child(-n + 2) {
+      margin-left: 50px;
+    }
+  }
+}
+
+.devby {
+  p {
+    margin: 0;
+    font-size: 12px;
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 15px;
+  margin-top: 150px;
+}
+
+.mobile-version {
+  display: none;
+}

@@ -1,0 +1,28 @@
+{
+  "name": "lp",
+  "version": "1.0.0",
+  "description": "",
+  "source": "./src/index.html",
+  "scripts": {
+    "dev": "parcel",
+    "build": "parcel build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.1.2",
+    "@popperjs/core": "^2.11.5",
+    "bootstrap": "^5.2.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.2",
+    "eslint": "^8.20.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "font-awesome": "^4.7.0",
+    "parcel": "^2.6.2",
+    "prettier": "^2.7.1"
+  }
+}
