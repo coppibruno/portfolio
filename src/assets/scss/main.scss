@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;700&family=Roboto:wght@300;400&display=swap');
-
+@import 'npm:animate.css/animate.css';
 @import '~bootstrap/scss/bootstrap';
+
 $principal_color: #55afe3;
 $second_color: #f7f7f7;
 
@@ -38,6 +39,9 @@ $second_color: #f7f7f7;
 
 .mr-2 {
   margin-right: 10px;
+}
+body {
+  background-color: #000;
 }
 * {
   color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
@@ -116,13 +120,16 @@ header {
 
 .index {
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-image: url('../img/background.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
+  .animations {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  background-image: url('../img/background.jpg') !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
 }
 
 .background-scope {

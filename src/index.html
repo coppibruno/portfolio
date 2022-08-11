@@ -11,6 +11,11 @@
       src="https://kit.fontawesome.com/6f21770ace.js"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -41,28 +46,28 @@
     </header>
 
     <div id="index" class="index">
-      <div class="img-div">
-        <a
-          target="_blank"
-          href="https://www.linkedin.com/in/bruno-coppi-022583177/"
-          ><img src="./assets/img/profile.jpg" alt="foto"
-        /></a>
+      <div class="animations animate__animated animate__slideInLeft">
+        <div class="img-div">
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/bruno-coppi-022583177/"
+            ><img src="./assets/img/profile.jpg" alt="foto"
+          /></a>
+        </div>
+        <p class="profileIntro"><i class="mr-2 fa-solid"></i>Bruno Coppi</p>
+        <p class="profileIntro">
+          <i class="mr-2 fa-solid fa-location-dot"></i>Blumenau SC
+        </p>
+        <p class="profileIntro">
+          <i class="mr-2 fa-solid fa-laptop-code"></i>Software Developer
+        </p>
       </div>
-      <p class="profileIntro">
-        <i class="mr-2 fa-solid fa-arrow-right-long"></i>Bruno Coppi
-      </p>
-      <p class="profileIntro">
-        <i class="mr-2 fa-solid fa-location-dot"></i>Blumenau SC
-      </p>
-      <p class="profileIntro">
-        <i class="mr-2 fa-solid fa-laptop-code"></i>Software Developer
-      </p>
     </div>
 
     <div class="background-scope">
       <div class="container">
         <div id="skills" class="skills">
-          <h3 class="text-center">
+          <h3 class="text-center txtSkills">
             Conheça as ferramentas que utilizo para desenvolver
           </h3>
           <div
@@ -362,7 +367,7 @@
         </div>
 
         <div id="contact" class="footer">
-          <h3 class="text-center">Entre em contato comigo.</h3>
+          <h3 class="text-center txtFooter">Entre em contato comigo.</h3>
           <div class="footer-icons">
             <span class="contact-icon">
               <a
